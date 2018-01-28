@@ -1,0 +1,458 @@
+/*初始化代码*/
+body,
+a,
+p,
+input,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+div,
+span,
+i,
+em,
+img,
+b,
+strong {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #999;
+}
+
+a:hover {
+}
+
+input {
+    border: 0 none;
+    outline: none;
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font: 12px/100% "微软雅黑";
+    color: #ffffff;
+    background-color: black;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.w {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.in_content {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+/*-----------白云部分开始---------------------------*/
+.in_content_main_top {
+    width: 100%;
+    height: 950px;
+    background-image: url("../imgs/首页主体部分/section_1_bg_1.jpg");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    /*  animation: yunDong 120s infinite; */
+}
+/* @keyframes yunDong {
+    0%{
+                transform: translateX(0px);
+            }
+
+            50%{
+                transform: translateX(-1920px) ;
+
+            }
+
+
+            100% {
+                transform: translateX(-3840px) ;
+
+
+} */
+.in_content_main_top .in_logo {
+    width: 355px;
+    height: 240px;
+    position: absolute;
+    right: 80px;
+    top: 167px;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.in_content_main_top .in_w {
+    position: relative;
+    height: 950px;
+
+}
+.in_content_main_top .in_proson {
+
+    width: 457px;
+    height: 858px;
+    background-image: url("../imgs/首页主体部分/section_1_kiana.png");
+    position: absolute;
+    left: 0;
+    top: 160px;
+}
+.in_content_main_top .in_wenzi {
+    width: 422px;
+    height: 146px;
+    position: absolute;
+    /*background-color: rgba();*/
+    left: 298px;
+    top: 464px;
+    background-image: url("../imgs/首页主体部分/bh3_slogan.png");
+}
+.in_content_main_top .in_lovejian {
+
+    position: absolute;
+    right: 80px;
+    top: 580px;
+}
+/*-----------白云部分结束---------------------------*/
+
+/*-------------------角色部分开始main_buttom----------------*/
+
+.in_content .main_top {
+    height: 950px;
+    width: 100%;
+    background-color: pink;
+}
+
+.in_content .main_buttom {
+    height: 640px;
+    width: 100%;
+    background:url("../imgs/03.jpg" ) no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+.main_buttom .role{
+    height: 640px;
+    position: relative;
+}
+
+.in_content .banner {
+    width: 100%;
+    height: 655px;
+    background-color: burlywood;
+}
+/*未完成背景中一部分*/
+/*.main_buttom .main_bTop{*/
+/*width: 100%;*/
+/*height: 166px;*/
+/*background-size: auto 100%;*/
+/*background: url("../imgs/首页主体部分/nav_list_bg.png") no-repeat  0px -212px  ;*/
+/*}*/
+/*4个圆妹子*/
+.role>i{
+    top: 20%;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 65%;
+    /*background-color:  #00c3ff;*/
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+}
+/*上面圆妹子*/
+.role .role1{
+    left: 50%;
+    background: url("../imgs/首页主体部分/bronya_c1.png") center center  #00c3ff;
+}
+/*左边圆妹子*/
+.role .role2{
+    left: 25%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url("../imgs/首页主体部分/kiana_c1.png") center center  #00c3ff;
+}
+/*下面圆妹子*/
+.role .role3{
+    top: 60%;
+    left: 50%;
+    background: url("../imgs/首页主体部分/himeko_c1.png") center center  #00c3ff;
+
+}
+/*右边圆妹子*/
+.role .role4{
+    right: 25%;
+    /*left: 0;*/
+    top: 50%;
+    transform: translateY(-50%);
+    background: url("../imgs/首页主体部分/mei_c1.png") center center  #00c3ff;
+}
+/*妹子后面的小框框*/
+/*.role1 i{*/
+/*position: absolute;*/
+/*width: 150px;*/
+/*height: 150px;*/
+/*border-radius: 65%;*/
+/*background-color: black;*/
+/*border: 3px solid #fff;*/
+/*}*/
+
+/*点击妹子出来的三个妹子图片为JS准备*/
+.role2 i{
+    /*position: absolute;*/
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 65%;
+    background-color: black;
+    border: 3px solid #fff;
+    float: left;
+}
+/*三张妹子照片放一排默认隐藏*/
+.role2 .move2{
+    width: 468px;
+    display: none;
+}
+/*左右视频框架*/
+.in_leftV,
+.in_rightV{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border: 4px solid #fff;
+    transform: skew(-10deg);
+    border-radius: 10px;
+}
+
+/*左边视频框*/
+.in_leftV{
+    top: -15%;
+    left: 5%;
+}
+/*右边视屏框*/
+.in_rightV{
+    right: 5%;
+    top: -15%;
+}
+/*-------------------角色部分开始main_buttom----------------*/
+
+/*banner 轮播图*/
+.in_content .banner {
+    background: url("../imgs/首页主体部分/bg_02_02.jpg");
+    -webkit-background-size: 1366px 655px;
+    background-size: 1366px 655px;
+    width: 100%;
+    height: 655px;
+    overflow: hidden;
+}
+
+.in_content .banner div.w {
+    margin-top: 124px;
+}
+
+.in_content .banner .main {
+    width: 1008px;
+    height: 312px;
+    border: 3px solid #212833;
+    margin-left: 5px;
+
+}
+
+.in_content .banner .main-left {
+    overflow: hidden;
+    float: left;
+    position: relative;
+    width: 473px;
+    height: 312px;
+    background-color: pink;
+}
+
+.in_content .banner .picture {
+    width: 3000px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.in_content .banner .picture li {
+    display: block;
+    float: left;
+}
+
+/* 三个圆 circle*/
+.in_content .banner .circle {
+    width: 146px;
+    height: 18px;
+    position: absolute;
+    left: 165px;
+    top: 282px;
+    cursor:pointer;
+}
+
+.in_content .banner .circle i {
+    display: block;
+    float: left;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: blue;
+    margin-right: 46px;
+    background-color: #041833;
+}
+
+.in_content .banner .circle .gaoliang {
+    background-color: #9ba5b3;
+}
+
+.in_content .banner .circle i:nth-child(3) {
+    margin-right: 0px;
+}
+
+/*右边tab导航栏*/
+.in_content .banner .main-right {
+    width: 490px;
+    height: 312px;
+    float: left;
+    padding: 0 25px 0 20px;
+    position: relative;
+    background-color: rgba(43,52,77,0.8);
+}
+
+.in_content .main-right .top {
+    height: 57px;
+    border-bottom: 1px solid #4b869f;
+    position: relative;
+}
+
+.in_content .main-right .top ul {
+    float: left;
+    margin-top: -34px;
+}
+
+.in_content .main-right .top li {
+    float: left;
+}
+
+.in_content .main-right .top li a {
+    display: block;
+    font-size: 22px;
+    color: #ffffff;
+    line-height: 55px;
+    height: 55px;
+    width: 86px;
+    text-align: center;
+    border-bottom: 2px;
+    border-top: 2px;
+}
+
+.in_content .main-right .top li .active {
+    color: #74dcff;
+    background-color: #3e4963;
+    border-bottom:2px solid #74dcff;
+}
+
+.in_content .main-right .top li a:hover {
+    color: #74dcff;
+}
+
+.in_content .main-right .top a {
+    float: right;
+    margin-top:34px;
+    width: 17px;
+    height: 17px;
+}
+
+/*导航栏下面的切换菜单 buttom*/
+.in_content .main-right .buttom ul {
+    margin-top: 8px;
+}
+
+.in_content .main-right .buttom li{
+    /*height: 40px;*/
+    /*line-height: 40px;*/
+}
+.in_content .main-right .buttom li a {
+    font-size:16px;
+    color: #ffffff;
+    height: 40px;
+    line-height: 40px;
+}
+
+.in_content .main-right .buttom li a:hover {
+    color:#74dcff ;
+}
+
+.in_content .main-right .buttom .text {
+    float: left;
+}
+
+.in_content .main-right .buttom .text {
+    width: 280px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.in_content .main-right .buttom ul {
+    display: none;
+}
+
+.in_content .main-right .buttom .date {
+    float: right;
+}
+
+/* 客服 QQ chat*/
+.in_content .chat {
+    height: 149px;
+    width: 1010px;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+
+.in_content .chat li {
+    display: block;
+    float: left;
+    width: 200px;
+    height: 149px;
+}
+
+.in_content .chat li:hover {
+    opacity: 0.4;
+}
+
+.in_content .chat li a{
+}
+.in_content .chat a:nth-child(5) {
+    margin-left: -10px;
+}
+
+
